@@ -2,15 +2,22 @@ package com.example.coolweather.db;
 
 import org.litepal.crud.DataSupport;
 
+/**
+ * Created by D22397 on 2017/12/25.
+ *
+ * 数据表 县：county 对应实体类
+ *
+ */
+
 public class County extends DataSupport {
 
     private int id;
 
-    private String countyName;
+    private String countyName; // 县的名字
 
-    private String weatherId;
+    private String weatherId; // 县所对应天气的id
 
-    private int cityId;
+    private int cityId; // 当前县所属市的id
 
     public int getId() {
         return id;
@@ -43,6 +50,5 @@ public class County extends DataSupport {
     public void setCityId(int cityId) {
         this.cityId = cityId;
     }
-
-
 }
+

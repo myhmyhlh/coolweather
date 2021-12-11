@@ -2,13 +2,20 @@ package com.example.coolweather.db;
 
 import org.litepal.crud.DataSupport;
 
+/**
+ * Created by D22397 on 2017/12/25.
+ *
+ * 数据表 省：province 对应实体类
+ *
+ */
+
 public class Province extends DataSupport {
 
     private int id;
 
-    private String provinceName;
+    private String provinceName; // 省的名字
 
-    private int provinceCode;
+    private int provinceCode; // 省的代号
 
     public int getId() {
         return id;
@@ -33,5 +40,4 @@ public class Province extends DataSupport {
     public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
     }
-
 }
